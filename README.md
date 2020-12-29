@@ -5,16 +5,16 @@ Simple Arduino program to engage a water pump when a water tank level is low. Us
 
 
 ## How it works
-Once the distance to water is above a threshold, the system will activate the pump with a transistor. Once the water reaches a certain level, the pump will be disengaged. Pump battery dying or water touching the 
-
-## Setup
-Modify the pump as described further. Aseemble the breadboard. Set the reservoirDepth variable to however deep the water sensor belives your water tank to be. Modify the level at which the pump is engaged in the loop() function. Attach the sonic sensor so it can ping the deepest point in the tank and tape the water presence sensor at a level that would be considered an overflow.
+Once the distance to water is above a threshold, the system will activate the pump with a transistor. Once the water reaches a certain level, the pump will be disengaged.
 
 ## Cool safety tricks
-If water touches the overflow sensor or is too far, the system will try to disengage the pump (it's either overflowing or the pump ran out of battery and water is running low). A red LED will light up.
+If water touches the overflow sensor or is too far, the system will try to disengage the pump (it's either overflowing or the pump ran out of battery and water is running low). An alarm LED will light up.
+
+## Setup
+Modify the pump as described further. Assemble the breadboard. Set the reservoirDepth variable to however deep the water sensor belives your water tank to be. Modify the level at which the pump is engaged in the loop() function. Attach the sonic sensor so it can ping the deepest point in the tank and tape the water presence sensor at a level that would be considered an overflow.
 
 ## Known problems
-Pump engagement level and levle indicating pump failure are hardcoded in the loop() function. Pump battery may run out.
+Pump engagement level and level indicating pump failure are hardcoded in the loop() function. Pump battery may run out.
 
 ## Hardware
 Arduino
@@ -67,9 +67,9 @@ D7 to 2
 
 S to A5
 
-+ to 5v
+\+ to 5v
 
-- to Gnd
+\- to Gnd
 
 #### Alarm LED
 
@@ -77,4 +77,4 @@ Pin 11 and ground with resistor somewhere in there also
 
 #### Water Pump
 
-Water pump should be powered by an external source. Find two points on the pump's board that make it run continuously and bridge them with a transistor. The transistor's middle pin connects to Pin 8. 
+Water pump should be powered by an external source. Find two points on the pump's board that make it run continuously and bridge them with a transistor. The transistor's middle pin connects to Pin 8. **Transistor ground should have the same ground as Arduino!**
