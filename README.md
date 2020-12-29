@@ -11,7 +11,7 @@ Once the distance to water is above a threshold, the system will activate the pu
 If water touches the overflow sensor or the tank bottoms out, the system will try to disengage the pump (it's either overflowing or the pump ran out of battery and water is running low). An alarm LED will light up.
 
 ## Setup
-Modify the pump as described further. Assemble the breadboard. Attach the sonic sensor so it can ping the deepest point in the tank and tape the water presence sensor at a level that would be considered an overflow. Set the reservoirDepth variable to however deep the water sensor belives your water tank to be. Modify the level at which the pump is engaged and the level where the system should be locked in the loop() function. 
+Modify the pump as described further. Assemble the breadboard. Attach the sonic sensor so it can ping the deepest point in the tank and tape the water presence sensor at a level that would be considered an overflow. Set the reservoirDepth variable to however deep the water sensor belives your water tank to be. Modify the level at which the pump is engaged and where it stops in the loop() function. 
 
 ## Known problems
 Pump engagement level is hardcoded in the loop() function. Pump battery may run out.
