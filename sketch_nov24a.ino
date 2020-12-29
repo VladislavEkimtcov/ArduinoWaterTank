@@ -91,7 +91,7 @@ waterLevel = to_surface();
 
 // check for system problems
 overflowAlarm = analogRead(respin);
-if (overflowAlarm >= 100 or waterLevel >= 13) {
+if (overflowAlarm >= 100 or waterLevel >= reservoirDepth) {
   lock_system();
 }
 
