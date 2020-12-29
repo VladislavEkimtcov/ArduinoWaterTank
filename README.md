@@ -1,6 +1,9 @@
 # ArduinoWaterTank
 Simple Arduino program to engage a water pump when a water tank level is low. Useful for humidifiers, etc.
 
+<img src="https://imgur.com/OlCpUJt.jpg" width="50%">
+
+
 ## How it works
 Once the distance to water is above a threshold, the system will activate the pump with a transistor. Once the water reaches a certain level, the pump will be disengaged. Pump battery dying or water touching the 
 
