@@ -78,3 +78,8 @@ Pin 11 and ground with resistor somewhere in there also
 #### Water Pump
 
 Water pump should be powered by an external source. Find two points on the pump's board that make it run continuously and bridge them with a transistor. The transistor's middle pin connects to Pin 8. **Transistor ground should be connected to Arduino's ground!**
+
+
+# License
+By downloading this software onto your computer, you explicitly agree to the following license.
+Only non-commercial use permitted. Home appliance manufacturers are double-banned from using this. I am not responsible for any damage to anything, ever, especially with this code. Attribution is required for any derivatives, explicit or not.
